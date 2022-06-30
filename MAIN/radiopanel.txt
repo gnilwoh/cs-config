@@ -1,0 +1,263 @@
+// Custom Radio
+//
+// 2022-JUN-30 - Version 1.1:
+//
+// Replace C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\resource\ui\radiopanel.txt
+//
+//## Bindings
+//
+//Offline Menu = radio
+//Bot Menu = radio1
+//Radio Menu = radio2
+//
+//## Examples of bindings in console
+//bind x radio2 //This will bind the Radio Menu to 'X'
+//bind y radio //This will bind the Offline Menu to 'Y'
+//bind z radio1 //This will bind the Bot Menu to 'Z'
+//
+
+"RadioPanel.txt"
+{
+
+//"SFUI_StandardRadio"
+//"SFUI_GroupRadio"	
+//"SFUI_ReportRadio"	
+	"Groups"
+	{
+		"common"
+		{
+			"hotkey"	"0"
+			"title"	"EXEC MENU"
+			"timeout"	"5"
+
+					"Config"
+					{	
+						"hotkey"	"0"
+						"title"	"EXEC MENU"
+						"timeout"	"5"
+						
+						"Exec (Autoexec)"
+						{
+							"hotkey"	"1"
+							"label"	"Exec (Autoexec)"
+							"cmd"	"exec crosshair_mainmainmain"
+						}
+
+						"Exec (BACKUPCONFIG)"
+						{
+							"hotkey"	"2"
+							"label"	"Exec (BACKUPCONFIG)"
+							"cmd"	"exec config_backupbackupbackup"
+						}
+
+						"Crosshair (MAIN)"
+						{
+							"hotkey"	"3"
+							"label"	"Crosshair (MAIN)"
+							"cmd"	"exec crosshair_mainmainmain"
+						}
+						
+						"Crosshair (Stretched)"
+						{
+							"hotkey"	"4"
+							"label"	"Crosshair (Stretched)"
+							"cmd"	"exec crosshair_stretched"
+						}
+						
+						"Crosshair (Natosaphix)"
+						{
+							"hotkey"	"5"
+							"label"	"Crosshair (Natosaphix)"
+							"cmd"	"exec crosshair_natosaphix"
+						}
+						
+						"Crosshair (B1t)"
+						{
+							"hotkey"	"6"
+							"label"	"Crosshair (B1t)"
+							"cmd"	"exec crosshair_b1t"
+						}
+
+						"Viewmdel (MAIN)"
+						{
+							"hotkey"	"7"
+							"label"	"Viewmodel (MAIN)"
+							"cmd"	"exec viewmodel_mainmainmain"
+						}
+
+						"Viewmdel (Alternative)"
+						{
+							"hotkey"	"8"
+							"label"	"Viewmodel (Alternative)"
+							"cmd"	"exec viewmodel_alternative"
+						}
+						
+
+					}
+
+
+
+					"Practice"
+					{
+						"Toggle Noclip"
+						{
+							"hotkey"	"1"
+							"label"	"Toggle Noclip"
+							"cmd"	"sv_cheats 1; noclip"
+						}
+						
+						"Toggle Godmode"
+						{
+							"hotkey"	"2"
+							"label"	"Toggle Godmode"
+							"cmd"	"sv_cheats 1; god"
+						}
+						
+						"Rethrow Last Grenade"
+						{
+							"hotkey"	"3"
+							"label"	"Rethrow Last Grenade"
+							"cmd"	"sv_cheats1; sv_rethrow_last_grenade "
+						}
+						
+						"Cast Ray"
+						{
+							"hotkey"	"4"
+							"label"	"Cast Ray"
+							"cmd"	"sv_cheats 1; cast_ray"
+						}
+						
+						"Draw Brushes (ON)"
+						{
+							"hotkey"	"5"
+							"label"	"Draw Brushes (ON)"
+							"cmd"	"sv_cheats 1; r_drawclipbrushes 2"
+						}	
+						
+						"Draw Brushes (OFF)"
+						{
+							"hotkey"	"6"
+							"label"	"Draw Brushes (OFF)"
+							"cmd"	"r_drawclipbrushes 0"
+						}
+						
+						"Impact & Trajectory (ON)"
+						{
+							"hotkey"	"7"
+							"label"	"Impact & Trajectory (ON)"
+							"cmd"	"sv_cheats 1; say_team Impact & Trajectory (ON); sv_grenade_trajectory 1; sv_grenade_trajectory_dash 1; sv_grenade_trajectory_thickness 0.5; sv_grenade_trajectory_time 8; sv_showimpacts 1; sv_showimpacts_time 5; sv_showimpacts_penetration 1"
+						}
+						
+						"Impact & Trajectory (OFF)"
+						{
+							"hotkey"	"8"
+							"label"	"Impact & Trajectory (OFF)"
+							"cmd"	"say_team Impact & Trajectory (OFF); sv_grenade_trajectory 0; sv_showimpacts 0; sv_showimpacts_time 4; sv_showimpacts_penetration 0"
+						}
+						
+						"Enable Practice"
+						{
+							"hotkey"	"9"
+							"label"	"Enable Practice"
+							"cmd"	"sv_cheats 1; mp_forcecamera 0; mp_solid_teammates 1; mp_limitteams 0; mp_autoteambalance 0; mp_spectators_max 10; mp_ignore_round_win_conditions 1; mp_maxmoney 60000; mp_startmoney 60000; mp_freezetime 0; mp_buytime 9999; mp_buy_anywhere 1; mp_radar_showall 1; sv_infinite_ammo 2; ammo_grenade_limit_total 5; bot_kick; mp_warmup_end; mp_restartgame 1"
+						}
+					}
+						
+					"Bots"
+					{
+						"Add Bot (CT)"
+						{
+							"hotkey"	"1"
+							"label"	"Add Bot (CT)"
+							"cmd"	"bot_add_ct"
+						}
+						
+						"Add Bot (T)"
+						{
+							"hotkey"	"2"
+							"label"	"Add Bot (T)"
+							"cmd"	"bot_add_t"
+						}
+						
+						"Bot Place"
+						{
+							"hotkey"	"3"
+							"label"	"Bot Place"
+							"cmd"	"bot_stop 1; bot_place"
+						}
+						
+						"Bot Crouch (ON)"
+						{
+							"hotkey"	"4"
+							"label"	"Bot Crouch (ON)"
+							"cmd"	"bot_crouch 1"
+						}
+						
+						"Bot Crouch (OFF)"
+						{
+							"hotkey"	"5"
+							"label"	"Bot Crouch (OFF)"
+							"cmd"	"bot_crouch 0"
+						}
+						
+						"Bot Mimic (ON)"
+						{
+							"hotkey"	"6"
+							"label"	"Bot Mimic (ON)"
+							"cmd"	"bot_mimic_yaw_offset 0; bot_mimic 1"
+						}
+						
+						"Bot Mimic (OFF)"
+						{
+							"hotkey"	"7"
+							"label"	"Bot Mimic (OFF)"
+							"cmd"	"bot_mimic_yaw_offset 0; bot_mimic 0"
+						}
+						
+						"Stop all bots"
+						{
+							"hotkey"	"8"
+							"label"	"Stop all bots"
+							"cmd"	"bot_stop 1"
+						}
+						
+						"Kick all bots"
+						{
+							"hotkey"	"9"
+							"label"	"Kick all bots"
+							"cmd"	"bot_kick"
+						}
+
+					}
+				
+
+			}
+		}
+
+		
+		"group"
+		{
+			"hotkey"	"2"
+			"title"	"Radio Menu"
+			"timeout"	"5"
+			
+			"Blank"
+			{
+
+			}
+		}
+		
+
+		"report"
+		{
+			"hotkey"	"3"
+			"title"	"Radio Menu"
+			"timeout"	"5"
+			
+			"Blank"
+			{
+			
+			}
+		}
+	}
+}
